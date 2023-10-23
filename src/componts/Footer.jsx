@@ -1,11 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import Watch from './Watch'
 
 const Footer = () => {
   return (
-    <div className="card-footer text-body-secondary opacity-85">
-        <div>for Impressum Information
-            <p id='xxxx'></p>
+    <div className="footerContainer">
+        <div>for Impressum Information DIV
+            <Watch/>
         </div>
     </div>
   )

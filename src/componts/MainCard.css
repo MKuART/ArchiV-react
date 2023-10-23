@@ -1,0 +1,39 @@
+.firstCard{
+    position: relative;
+}
+.contentCard{
+    background-color: rgba(255, 255, 255, 0.776);
+    border: 2px solid rgba(255, 255, 255, 0.374);
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    z-index: 1;
+    overflow: auto;
+}
+.contentCard p{
+    font-size: 0.8rem;
+}
+
+
+.firstCardSelectOne{
+    margin-top: 10%;
+    margin-left: 2%;
+<    
+}
+.firstNewsCardHeader{
+    color: red;
+    font-size: 1rem;
+}
+.firstCardSelecttwo{
+    margin-top: 40%;
+    margin-left: 4%;
+}
+.firstCardSelectthree{
+    margin-top: 38%;
+    margin-left: 55%;
+}
+
+.firstCardSelectfour{
+    margin-top: 5%;
+    margin-left: 45%;
+}

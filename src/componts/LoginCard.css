@@ -1,0 +1,22 @@
+div div{
+    
+    padding: 5px;
+}
+.inputLogin{
+    margin: 10px;
+}
+.loginCardContainer input{
+    background-color: rgba(76, 0, 130, 0.135);
+}
+.loginCardGreen{
+    border: 2px solid rgba(76, 0, 130, 0.183);
+    box-shadow: 2px 4px 15px rgba(47, 255, 78, 0.77);
+    margin: 10px;
+    height: 100px;
+}
+.loginCardRed{
+    border: 2px solid rgba(76, 0, 130, 0.183);
+    box-shadow: 2px 4px 15px orangered;
+    margin: 10px;
+    display: flex;
+}

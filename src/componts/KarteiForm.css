@@ -1,0 +1,15 @@
+.unsere{
+    
+}
+.row div{
+    padding: 10px;
+}
+.formContainer{
+    box-shadow: 2px 3px 5px gray;
+}
+.formContainer input{
+    background: rgba(76, 0, 130, 0.222);
+}
+.formContainer label{
+    font-weight: bold;
+}

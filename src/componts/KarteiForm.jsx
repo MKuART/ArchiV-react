@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './KarteiForm.css'
 
 
 
@@ -30,8 +31,11 @@ const KarteiForm = () => {
       newErrors.email = "E-Mail ist erforderlich";
     } */
     // const storedData = localStorage.getItem('formData');
-    const localFirstName = localStorage.setItem("Name", formData.firstName )
-    console.log(localFirstName)
+    const localFirstName = localStorage.setItem("Vorname", formData.firstName );
+    const localLastName = localStorage.setItem("Name", formData.lastName );
+    //let com = (localStorage.getItem ("Vorname")); // Auslesen 
+console.log (localStorage.getItem ("Vorname"), "Name");
+console.log (localStorage.getItem ("Name"), "Name");
 /*     if (storedData) {
       dataArray = JSON.parse(storedData);
     } */
@@ -42,11 +46,15 @@ const KarteiForm = () => {
       setErrors(newErrors);
       return;
     } */
+    alert("Formular wurde erfoglreich gesendet!")
   }
 
   return (
-    <div>
-  <form className="row g-3" onSubmit={handleSubmit}>
+    <div className='formContainer'>
+  <form className="row g-3 unsere" 
+      onSubmit={handleSubmit}
+      method='post'
+      >
         <div className="row g-3">
   <div className="col">
     <label htmlFor="">Vorname:</label>
@@ -150,10 +158,11 @@ const KarteiForm = () => {
     </div>
   </div> */}
   <div className="col-12">
-    <button type="submit" className="btn btn-primary">Sign in</button>
+    <button type="submit" className="btn btn-primary">send</button>
   </div>
-  <p>Hier soll das Array mit Objecten stehen:{dataArray}</p>
+  <p>Hier soll das Array mit Objecten stehen:{}</p>
 </form>
+
     </div>
   )
 }

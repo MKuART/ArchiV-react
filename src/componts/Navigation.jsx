@@ -1,22 +1,22 @@
-import React from 'react';
-import './Header.css'
-import { Outlet, Link , NavLink} from 'react-router-dom';
-import Footer from './Footer';
-import Navigation from './Navigation';
+import React from 'react'
+import {Outlet,Link} from 'react'
 
-// should be Layout
-const Header = () => {
-  const entertV = "e.V."
+const Navigation = () => {
   return (
     <div>
-      
-    <header className="card" >
-    <header>
+
+    </div>
+  )
+}
+
+export default Navigation
+
+{/* <header>
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand logo" href="#">ArchiV.{<p className='enterV'>{entertV}</p>}</NavLink>
+        <Link to="/" className="navbar-brand logo" href="#">ArchiV.{<p className='enterV'>{entertV}</p>}</Link>
       
-            <NavLink to="/logincard" className="nav-link" href="#">Login</NavLink>
+            <Link to="/logincard" className="nav-link" href="#">Login</Link>
           
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@ const Header = () => {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             
-            <NavLink to="/karteiform" className="nav-link active" aria-current="page" href="#">Kartei</NavLink>
+            <Link to="/karteiform" className="nav-link active" aria-current="page" href="#">Kartei</Link>
           </li>
 
         <li className="nav-item dropdown">
@@ -33,7 +33,7 @@ const Header = () => {
             Kategorien
             </a>
           <ul className="dropdown-menu">
-            <NavLink to="/storagetest" className="dropdown-item" href="#">list with storage-test</NavLink>
+            <li><a className="dropdown-item" href="#">News</a></li>
             <li><a className="dropdown-item" href="#">Ranking</a></li>
             <li><hr className="dropdown-divider"></hr></li>
             <li><a className="dropdown-item" href="#">another categories</a></li>
@@ -53,15 +53,4 @@ const Header = () => {
     </div>
 
 </nav>
-</header>
-    </header>
-    
-    <main>
-      <Outlet/>
-    </main>
-    <Footer></Footer>
-    </div>
-  )
-}
-
-export default Header
+</header> */}

@@ -5,16 +5,18 @@ import Header from './componts/Header'
 import MainCard from './componts/MainCard'
 import KarteiForm  from './componts/KarteiForm'
 import InlineButton from './componts/InlineButton'
+import LoginCard from './componts/LoginCard'
+
+import {RouterProvider} from 'react-router-dom';
+import {router} from './utils/router'
 
 
 function App() {
 
   return (<div className='appDiv'>
-      <Header/>
-      <KarteiForm/>
-      <MainCard/>
-      <Footer/>
-      <InlineButton/>
+    
+    <RouterProvider router={router}/>
+
   </div>)
 }
 
